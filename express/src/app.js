@@ -12,8 +12,12 @@ const alunos = [
 ];
 
 const buscarAlunoPorId = (id) => {
-    return alunos.filter((aluno) => aluno.id == id);
+    return alunos.filter(aluno => aluno.id == id);
 };
+
+const buscarIndexAluno = (id) => {
+    return alunos.findIndex(aluno => aluno.id == id)
+}
 
 // Rota padrão/raiz
 app.get("/", (req, res) => {
@@ -24,15 +28,37 @@ app.get("/alunos", (req, res) => {
     res.status(200).send(alunos);
 });
 
-app.get("/alunos/:id", (req, res) => {
-    let id = req.params.id;
-    res.status(200).send(buscarAlunoPorId(id));
-});
 
 app.post("/alunos", (req, res) => {
     let data = req.body;
     alunos.push(data);
     res.status(201).send(`Aluno ${data.nome} cadastrado com sucesso`);
 });
+
+app.get("/alunos/:id", (req, res) => {
+    let id = req.params.id;
+    res.status(200).send(buscarAlunoPorId(id));
+});
+
+app.delete("/alunos/:id", (req, res) => {
+    let id = req.params.id
+    res.status(200).send(`Aluno foi excluído com sucesso.`)
+    alunos.splice(buscarIndexAluno(id), 1)
+})
+
+app.put("/alunos/:id", (req, res) => {
+    let index = buscarIndexAluno(req.params.id);
+    
+    if (index === -1) {  // Verifica se o aluno existe
+        return res.status(500).send(`Id inválido`);
+    }
+
+    // Atualiza os dados do aluno
+    alunos[index].nome = req.body.nome;
+    alunos[index].idade = req.body.idade;
+
+    // Envia a resposta de sucesso
+    res.status(200).send(`Aluno foi modificado com sucesso.`);
+})
 
 export default app;

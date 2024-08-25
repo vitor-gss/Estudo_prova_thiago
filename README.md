@@ -2,7 +2,7 @@
 
 ## Início
   - [X] Node.js
-  - [ ] Express
+  - [X] Express
 ## Arrays
   - [X] Filter
   - [ ] Every
