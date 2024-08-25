@@ -1,42 +1,21 @@
 # Estudos para a prova do thiago
 
 ## Início
-  - [] Node.js
-  - [] Express
-
+  - [X] Node.js
+  - [ ] Express
 ## Arrays
-
-### Filter
-
-### Every
-
-### Some
-
-### Find
-
-### Map
-
-### Each
-
+  - [X] Filter
+  - [ ] Every
+  - [ ] Some
+  - [ ] Find
+  - [ ] Map
+  - [ ] Each
 ## Promises
-
-### Fetch
-
-### Async/Await
-
+  - [ ] Fetch
+  - [ ] Async/Await
 ## Try Catch
-
-### Try e catch
-
-```js
-try {
-} catch (err) {}
-```
-
-### Exceções
-
+  - [ ] Try e catch
+  - [ ] Exceções
 ## Módulos
-
-### Import
-
-### Export
+  - [ ] Import
+  - [ ] Export
