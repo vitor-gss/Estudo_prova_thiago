@@ -5,11 +5,11 @@
   - [X] Express
 ## Arrays
   - [X] Filter
-  - [ ] Every
-  - [ ] Some
-  - [ ] Find
-  - [ ] Map
-  - [ ] Each
+  - [X] Every
+  - [X] Some
+  - [X] Find
+  - [X] Map
+  - [X] Each
 ## Promises
   - [ ] Fetch
   - [ ] Async/Await
