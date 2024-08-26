@@ -107,8 +107,9 @@ app.get("/alunos/:id", (req, res) => {
 ### Para executar com o id
 
 ```js
-http://localhost:3000/alunos/2 // 2 => Valor do id
+http://localhost:3000/alunos/2
 ```
+- 2 => Valor do id
 
 ### Resposta do Postman
 
