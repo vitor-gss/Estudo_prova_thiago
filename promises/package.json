@@ -1,0 +1,12 @@
+{
+  "name": "promises",
+  "version": "1.0.0",
+  "description": "São como promessas na vida real, espera um retorno",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

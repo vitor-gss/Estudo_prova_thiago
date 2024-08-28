@@ -11,7 +11,7 @@
   - [X] Map
   - [X] Each
 ## Promises
-  - [ ] Fetch
+  - [X] Fetch
   - [ ] Async/Await
 ## Try Catch
   - [ ] Try e catch
